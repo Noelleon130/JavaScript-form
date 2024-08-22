@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="file:///C:/Users/USER/Desktop/MAIN/WEB%20DESIGN/fontawesome-free-6.2.1-web/css/all.css">
+</head>
+<body>
+  <div class="form-container">
+      <form action="#" method="post">
+        <i class="fas fa-paper-plane" id="paper-plane"></i>
+      <div class="form-inputs">
+        <label for="fullname">Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+        <span id="name-error"></span>
+      </div>
+      <div class="form-inputs">
+        <label for="phoneNumber">Phone No</label>
+        <input type="tel" placeholder="123 456 7890"  id="contact-phone" onkeyup="validatePhone()">
+        <span id="phone-error"></span>
+      </div>
+      <div class="form-inputs">
+        <label for="Email">Email Id</label>
+        <input type="email" placeholder="Enter Your email"  id="contact-email" onkeyup="validateEmail()">
+        <span id="email-error"></span>
+      </div>
+      <div class="form-inputs">
+        <label for="msg">Your Message</label>
+        <textarea placeholder=" Your Message"  id="contact-msg" onkeyup="validateMsg()"></textarea>
+        <span id="message-error"></span>
+      </div>
+      <button onclick="validateForm()" type="submit">Submit</button><br>
+      <span id="submit-error"></span>
+    </div>
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
